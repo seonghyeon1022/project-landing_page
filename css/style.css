@@ -249,6 +249,17 @@ main {
     transform: translate(0, -50%);
 }
 
+.subscribe-section .btn-top {
+    position: absolute;
+    bottom: 2.9rem;
+    right: 2.9rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #C4C4C4;
+    border-radius: 100%;
+    background-color: #FFFFFFCC;
+}
+
 /* footer */
 footer {
     display: flex;
