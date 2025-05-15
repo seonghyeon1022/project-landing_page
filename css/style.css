@@ -3,7 +3,14 @@
 html {
     font-family: "Spoqa Han Sans Neo", sans-serif;
     font-size: 10px;
+}
+
+body {
     font-weight: 400;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
 }
 
 .btn-main {
@@ -16,38 +23,35 @@ html {
     padding: 1.5rem 3rem;
 }
 
-wrap {
-    width: 100%;
-    background-color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 192rem;
-    margin: 0 auto;
-}
-
 /* header */
 header {
+    background-color: #F2E9D8;
+    font-size: 1.6rem;
+}
+
+.wrapper-header {
     display: flex;
     flex-direction: column;
-    padding: 0 32rem;
-    background-color: #F2E9D8;
-    width: 100%;
-    height: 90rem;
-    font-size: 1.6rem;
-    font-weight: 400;
+    max-width: calc(100% - 64rem);
+    height: 90.2rem;
+    margin: 0 auto;
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.6rem 0;
+    height: 10.2rem;
+}
+
+.btn-hamburger {
+    display: none;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .header-nav {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 3rem;
 }
@@ -57,45 +61,39 @@ header {
 }
 
 .header-main {
-    height: 100%;
+    background: url("../images/box-cat.png") right top no-repeat;
+    height: 79.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("../images/box-cat.png");
-    background-repeat: no-repeat;
-    background-size: 41.5rem 89rem;
-    background-position: right top;
+    gap: 4rem;
 }
 
 .header-main h2 {
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 6rem;
-    margin-bottom: 4rem;
 }
 
 .header-main p {
-    margin-bottom: 4rem;
     line-height: 2rem;
 }
 
 /* main */
 main {
-    margin: 8rem auto 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 8rem auto 0;
+    max-width: calc(100% - 64rem);
+    font-size: 1.6rem;
 }
 
-/* profile */
 .profile {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 11rem;
-    color: #000;
-    margin-bottom: 12rem;
 }
 
 .profile img {
@@ -109,29 +107,26 @@ main {
 .profile-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 3rem;
 }
 
 .profile-text h3 {
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 3rem;
 }
 
 .profile-text p {
-    font-size: 1.6rem;
     line-height: 2rem;
 }
 
 /* photos */
-
 .photos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 9rem;
+    margin: 12rem 0 9rem;
 }
 
 .photos h2 {
@@ -172,7 +167,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8.1rem;
+    gap: 5.2rem;
     margin-bottom: 19.6rem;
 }
 
@@ -201,7 +196,6 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 128rem;
-    height: 20rem;
     padding: 5rem 5.8rem;
     background-color: #263140;
     border-radius: 30px;
@@ -240,7 +234,6 @@ main {
 .subscribe-article form input {
     position: relative;
     width: 100%;
-    height: 100%;
     padding: 2rem 12.3rem 2rem 6.8rem;
     border-radius: 60px;
     background-color: #fff;
@@ -248,9 +241,9 @@ main {
 
 .subscribe-article form input::placeholder {
     font-family: "Spoqa Han Sans Neo";
-    font-weight: 400;
     font-size: 1.6rem;
 }
+
 .subscribe-article form button {
     position: absolute;
     top: 50%;
@@ -258,25 +251,16 @@ main {
     transform: translate(0, -50%);
 }
 
-.subscribe-section .btn-top {
-    position: absolute;
-    bottom: 2.9rem;
-    right: 2.9rem;
-    width: 5rem;
-    height: 5rem;
-    border: 1px solid #C4C4C4;
-    border-radius: 100%;
-    background-color: #FFFFFFCC;
-}
-
 /* overlay */
 .overlay {
     display: none;
+    margin: 0 auto;
 }
 
 .overlay-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 60rem;
     height: 40rem;
@@ -302,7 +286,6 @@ main {
 
 .overlay-wrap p {
     font-size: 1.4rem;
-    font-weight: 400;
     line-height: 2rem;
     margin-bottom: 3.8rem;
 }
@@ -317,7 +300,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 82.6rem;
-    padding: 4.5rem 32rem;
+    max-width: (100% - 64rem);
+    margin: 0 auto;
+    padding: 4.5rem 0;
 }
 
 .social-icons {
@@ -326,6 +311,7 @@ footer {
     align-items: center;
     gap: 2rem;
 }
+
 .social-icons li {
     position: relative;
     width: 4.2rem;
@@ -339,4 +325,16 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* btn-top */
+.btn-top {
+    position: fixed;
+    bottom: 18.4rem;
+    right: 2.4rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #C4C4C4;
+    border-radius: 100%;
+    background-color: #FFFFFFCC;
 }
