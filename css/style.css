@@ -338,3 +338,10 @@ footer {
     border-radius: 100%;
     background-color: #FFFFFFCC;
 }
+
+@media (max-width:768px) {
+    .btn-main {
+        font-size: 1.4rem;
+        padding: 1.1rem 2.4rem;
+    }
+}
