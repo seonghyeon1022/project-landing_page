@@ -340,8 +340,73 @@ footer {
 }
 
 @media (max-width:768px) {
+    body {
+        width: 39rem;
+    }
+    
     .btn-main {
         font-size: 1.4rem;
         padding: 1.1rem 2.4rem;
+    }
+
+    /* header */
+    header {
+        font-size: 1.4rem;
+    }
+
+    .wrapper-header {
+        max-width: calc(100% - 2rem);
+        height: 79.4rem;
+        text-align: center;   
+    }
+
+    .header-top {
+        height: 7.6rem;
+        gap: 22.6rem;
+        padding: 0 1rem;
+    }
+
+    .header-top h1 img {
+        width: 9.2rem;
+        height: 2.8rem;
+        object-fit: cover;
+    }
+
+    .btn-hamburger {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-main {
+        background: url("../images/box-cat.png") center bottom no-repeat;
+        background-size: 19.7rem 42.4rem;
+        height: 72.6rem;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .header-main h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-top: 4rem;
+    }
+
+    .header-main p {
+        line-height: 2rem;
+    }
+
+    .header-main .btn-main {
+        margin-bottom: 3rem;
+    }
+
+    /* main */
+    main {
+        margin: 4rem auto 0;
+        max-width: calc(100% - 6.4rem);
     }
 }
