@@ -33,7 +33,8 @@ header {
 .wrapper-header {
     display: flex;
     flex-direction: column;
-    max-width: calc(100% - 64rem);
+    width: 100%;
+    max-width: 128rem;
     height: 90.2rem;
     margin: 0 auto;
 }
@@ -86,7 +87,8 @@ main {
     display: flex;
     flex-direction: column;
     margin: 8rem auto 0;
-    max-width: calc(100% - 64rem);
+    width: 100%;
+    max-width: 128rem;
     font-size: 1.6rem;
 }
 
@@ -297,7 +299,8 @@ main {
 
 /* footer */
 footer {
-    max-width: (100% - 64rem);
+    width: 100%;
+    max-width: 128rem;
     margin: 0 auto;
     padding: 4.5rem 0;
 }
@@ -350,7 +353,8 @@ footer {
 
 @media (max-width:768px) {
     body {
-        width: 39rem;
+        width: 100%;
+        overflow-x: hidden;
     }
     
     .btn-main {
@@ -371,7 +375,7 @@ footer {
 
     .header-top {
         height: 7.6rem;
-        gap: 22.6rem;
+        gap: 80%;
         padding: 0 1rem;
     }
 
